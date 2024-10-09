@@ -12,13 +12,11 @@
   },
 
   "plugins": [
-    "import",
     "only-warn",
     "import",
     "jsx-a11y",
     "react-hooks",
     "prettier",
-//    "redux-saga",
     "react",
     "@typescript-eslint"
   ],
@@ -38,8 +36,8 @@
       "jsx": true
     },
     "ecmaVersion": 2016,
-    "sourceType": "module"
-    //    "project": "./tsconfig.json"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
 
   "env": {
@@ -66,10 +64,10 @@
     "func-names": 0,
     "default-case": 0,
     "react-hooks/rules-of-hooks": [
-      "error"
-//      {
-//        "debug": true
-//      }
+      "error",
+      {
+        "debug": true
+      }
     ],
 //    "react-hooks/exhaustive-deps": "error",
     "no-debugger": "off",
@@ -137,8 +135,6 @@
     "react/require-extension": 0,
     "react/self-closing-comp": 0,
     "react/sort-comp": 0,
-//    "redux-saga/no-yield-in-race": 2,
-//    "redux-saga/yield-effects": 2,
     "require-yield": 0,
     "import/extensions": [
       "error",
@@ -158,8 +154,8 @@
     {
       "files": ["**/*Slice*.ts", "**/*helpers*.ts*"],
       "rules": {
-        "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": "off"
+        "no-unused-vars": "warn",
+        "@typescript-eslint/no-unused-vars": "warn"
       }
     }
   ]
