@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5", //es6
+    "jsx": "react",
+    "allowJs": true,
+    "strict": true,
+    "moduleResolution": "Node",
+    "baseUrl": "src", //src
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+
+    //    "noUnusedLocals": true,
+    "sourceMap": true,
+
+    "typeRoots": [
+      "src/customTypings",
+      "node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    //    "noEmit": true,
+    "outDir": "dist"
+  },
+
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ],
+  "exclude": [
+    "./src/**/*Slice*"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "files": [
+    "./src/index.d.ts"
+  ]
+}

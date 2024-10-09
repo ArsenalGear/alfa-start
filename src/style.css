@@ -1,0 +1,74 @@
+html,
+body {
+  background-color: #F8F8F8;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input[type=number],
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+input {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #101828;
+}
+input::placeholder{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.fontLoaded {}
+
+div{
+  box-sizing: border-box;
+}
+
+p, a, h1, h2, h3 div, label, li, td {}
+a {
+  cursor: pointer;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B4BECB3F;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+legend {
+  width: unset;
+}
+
+/*.dark-theme .ace_content,*/
+/*.dark-theme .ace_active-line {*/
+/*  background: #19212F!important;*/
+/*}*/
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
