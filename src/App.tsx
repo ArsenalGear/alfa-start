@@ -66,6 +66,7 @@ const App: FC = () => {
     <>
       {/*<AppWrapper>*/}
       <BrowserRouter>
+        <title>App</title>
         <>{console.log('4', 4)}</>
         <Routes />
       </BrowserRouter>

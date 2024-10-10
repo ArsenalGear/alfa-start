@@ -71,7 +71,7 @@ const Routes: FC = () => {
         <>
           {/*<Route path="/" element={<LoginPage />} />*/}
           {/*<Route path="/auth" element={<LoginPage />} />*/}
-          <Route path="*" element={<h1>NotAuthen 441404</h1>} />
+          <Route path="*" element={<h1>NotAuthen 4123441404</h1>} />
         </>
       )}
     </RoutesDom>
