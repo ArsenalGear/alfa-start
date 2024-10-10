@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 // import { AppWrapper } from 'containers/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearNotification, setNotification } from 'store/reducers';
-import { loaderLabelChecker } from 'utils/redux/loader';
+// import { loaderLabelChecker } from 'utils/redux/loader';
 import { isEmpty } from 'utils/validation';
 import { Routes } from './routes';
 import { createNotificationDataSelector, createLoadingSelector } from './store/selectors';
