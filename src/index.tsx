@@ -24,7 +24,7 @@ root.render(
     <PersistGate loading={null} persistor={persistor}>
       {/*<AppErrorBoundary>*/}
       <App />
-      {/*</AppErrorBoundary>*/}
+      {/*</AppErrorBoundary>12*/}
     </PersistGate>
   </Provider>,
 );
