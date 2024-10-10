@@ -2,43 +2,43 @@ import React, { FC } from 'react';
 import './style.css';
 import { BrowserRouter } from 'react-router-dom';
 // import { AppWrapper } from 'containers/styles';
-import { useDispatch, useSelector } from 'react-redux';
-import { clearNotification, setNotification } from 'store/reducers';
+import { useSelector } from 'react-redux';
+// import { clearNotification, setNotification } from 'store/reducers';
 // import { loaderLabelChecker } from 'utils/redux/loader';
 import { isEmpty } from 'utils/validation';
 import { Routes } from './routes';
 import { createNotificationDataSelector, createLoadingSelector } from './store/selectors';
 
 const App: FC = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const loadingData = useSelector(createLoadingSelector());
   const notificationData = useSelector(createNotificationDataSelector());
 
-  const singleNotificationLength = notificationData.notifications.length === 1;
+  // const singleNotificationLength = notificationData.notifications.length === 1;
 
-  const isSingleNotification = (elem: string) => {
-    if (singleNotificationLength) {
-      dispatch(clearNotification());
-    } else {
-      dispatch(
-        setNotification({
-          notificationTitle: 'Ошибка',
-          notificationStatus: 'error-status',
-          notifications: deleteNotify(elem),
-        }),
-      );
-    }
-  };
+  // const isSingleNotification = (elem: string) => {
+  //   if (singleNotificationLength) {
+  //     dispatch(clearNotification());
+  //   } else {
+  //     dispatch(
+  //       setNotification({
+  //         notificationTitle: 'Ошибка',
+  //         notificationStatus: 'error-status',
+  //         notifications: deleteNotify(elem),
+  //       }),
+  //     );
+  //   }
+  // };
 
-  const deleteNotify = (elem: any) =>
-    notificationData.notifications.filter(
-      (e: any, index: number) => elem !== notificationData.notifications[index][0],
-    );
+  // const deleteNotify = (elem: any) =>
+  //   notificationData.notifications.filter(
+  //     (e: any, index: number) => elem !== notificationData.notifications[index][0],
+  //   );
   // 1
   const returnBackOrFrontNotify = () => {
     if (notificationData.notifications.length > 0) {
-      return notificationData.notifications.map((e: any[], i: number) => (
+      return notificationData.notifications.map((e: any[]) => (
         <React.Fragment key={e[0]}>
           {/*<NotificationWindow*/}
           {/*  style={{ bottom: `${(i + 1) * 5.5 - 4.5}rem` }}*/}
@@ -67,7 +67,7 @@ const App: FC = () => {
       {/*<AppWrapper>*/}
       <BrowserRouter>
         <title>App</title>
-        <>{console.log('4', 41)}</>
+        {/*<>{console.log('4', 421)}</>*/}
         <Routes />
       </BrowserRouter>
 
