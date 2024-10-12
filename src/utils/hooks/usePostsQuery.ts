@@ -1,4 +1,4 @@
-import { fetchData } from '../../api/json/json';
+import { fetchData } from '@/api/json/json';
 import { useQuery } from '@tanstack/react-query';
 import { AxiosError } from 'axios';
 

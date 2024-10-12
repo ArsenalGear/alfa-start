@@ -138,7 +138,8 @@
     "require-yield": 0,
     "import/extensions": [
       "error",
-      "ignorePackages",
+      "never",
+//      "ignorePackages",
       {
         "js": "never",
         "jsx": "never",

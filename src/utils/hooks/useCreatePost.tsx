@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { jsonCreate } from 'api/json/jsonCreate';
+import { jsonCreate } from '@/api/json/jsonCreate';
 
 export const useCreatePost = (data?: any) => {
   const client = useQueryClient();

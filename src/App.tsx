@@ -6,12 +6,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 // import { clearNotification, setNotification } from 'store/reducers';
 // import { loaderLabelChecker } from 'utils/redux/loader';
-import { isEmpty } from 'utils/validation';
+import { isEmpty } from '@/utils/validation';
 import { Routes } from './routes';
 import { createNotificationDataSelector, createLoadingSelector } from './store/selectors';
 import { useTodosQuery } from './utils/hooks/usePostsQuery';
-// import { jsonCreate } from './api/json/jsonCreate';
 import { useCreatePost } from './utils/hooks/useCreatePost';
+import { BaseButton } from '@/components/custom-components/Button';
 
 const App: FC = () => {
   // const dispatch = useDispatch();
@@ -39,8 +39,8 @@ const App: FC = () => {
   //   },
   // });
 
-  const loadingData = useSelector(createLoadingSelector());
-  const notificationData = useSelector(createNotificationDataSelector());
+  const loadingData: any = useSelector(createLoadingSelector());
+  const notificationData: any = useSelector(createNotificationDataSelector());
 
   // const singleNotificationLength = notificationData.notifications.length === 1;
 
@@ -155,7 +155,8 @@ const App: FC = () => {
         {/*>*/}
         {/*  Изменить пост*/}
         {/*</button>*/}
-        <button onClick={createPost}>Создать пост</button>
+        <button onClick={createPost}>Создать пост2222 </button>
+        <BaseButton btnText="123" />
         <Routes />
       </BrowserRouter>
 

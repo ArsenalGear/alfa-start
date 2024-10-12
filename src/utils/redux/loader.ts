@@ -1,4 +1,4 @@
-import { isEmpty } from 'utils/validation';
+import { isEmpty } from '@/utils/validation';
 
 export const loaderLabelChecker = (loadingData: { type: string }) => {
   if (!isEmpty(loadingData)) {
