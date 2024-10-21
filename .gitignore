@@ -105,3 +105,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Other
+.web1pack.config.ts
+.es1lintrc
+.web1pack.config.js
+.ts1config
