@@ -1,22 +1,19 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "ESNext", //es6
-    "target": "es5", //es6
+    "module": "ESNext",
+    "target": "es5",
     "jsx": "react",
-//    "jsx": "react-jsx",
     "allowJs": true,
     "strict": true,
     "moduleResolution": "Node",
-//    "baseUrl": "src", //src
     "baseUrl": ".", //src
     "paths": {
       "@/*": ["./src/*"]
     },
-    "esModuleInterop": true, //правильно обрабатывать импорты
-    "allowSyntheticDefaultImports": true, //правильно обрабатывать импорты дефолтного импорта библиотек не указывать * as 33:29
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
-    //    "noUnusedLocals": true,
     "sourceMap": true,
     "typeRoots": [
       "src/customTypings",
@@ -31,7 +28,6 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
-    //    "noEmit": true,
     "outDir": "dist"
   },
   "include": [
@@ -42,9 +38,9 @@
   "exclude": [
     "./src/**/*Slice*"
   ],
-  "ts-node": { //для импортов
+  "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS" //теперь можно использовать "module": "ESNext"
+      "module": "CommonJS"
     }
   },
   "files": [

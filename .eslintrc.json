@@ -27,7 +27,6 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
-//    "airbnb",
     "prettier"
   ],
 
@@ -69,7 +68,6 @@
         "debug": true
       }
     ],
-//    "react-hooks/exhaustive-deps": "error",
     "no-debugger": "off",
     "prettier/prettier": [
       "error",
@@ -120,7 +118,6 @@
     "no-shadow": 0,
     "no-param-reassign": 0,
     "no-unused-vars": "error",
-//    "no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
     "@typescript-eslint/no-unused-vars": "error",
     "no-use-before-define": 0,
     "prefer-template": 2,
@@ -139,7 +136,6 @@
     "import/extensions": [
       "error",
       "never",
-//      "ignorePackages",
       {
         "js": "never",
         "jsx": "never",
