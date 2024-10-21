@@ -12,7 +12,7 @@ import {
   UtilsSlice,
   ThemeSlice,
   LanguageSlice,
-} from 'store/reducers';
+} from '@/store/reducers';
 // import CatalogsSlice from '../containers/services/Catalogs/store/CatalogsSlice';
 import { authData } from './constants';
 // import { postAPI } from '../containers/services/Catalogs/store/instanceRTQ.';

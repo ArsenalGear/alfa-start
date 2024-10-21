@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from 'axios';
-import { getTokenFromLocalStorage } from 'utils/localstorage/api';
+import { getTokenFromLocalStorage } from '@/utils/localstorage/api';
 
 const customAxiosInstance = (contentType: string, baseURL: string) => {
   const axiosInstance = axios.create({

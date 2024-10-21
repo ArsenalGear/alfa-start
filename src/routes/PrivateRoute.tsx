@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import { useLocation, Navigate } from 'react-router-dom';
 // import { isAuthenticatedSelector } from 'containers/LoginPage/store/selectors';
 
@@ -8,6 +8,7 @@ const PrivateRoute: FC<any> = ({ children }) => {
   const location = useLocation();
 
   // if (!isAuthenticated) {
+  // eslint-disable-next-line
   if (!false) {
     // Redirect them to the /login page, but save the current location they were
     // trying to go to when they were redirected. This allows us to send them

@@ -1,7 +1,7 @@
 import React, { FC, Suspense } from 'react';
 import { Route, Routes as RoutesDom, Navigate } from 'react-router-dom';
 // import { LoginPage } from 'containers/LoginPage/LoginPage';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import PrivateRoute from './PrivateRoute';
 // import { isAuthenticatedSelector } from '../containers/LoginPage/store/selectors';
 

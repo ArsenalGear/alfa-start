@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "ESNext",
+    "module": "ESNext", //es6
     "target": "es5", //es6
     "jsx": "react",
+//    "jsx": "react-jsx",
     "allowJs": true,
     "strict": true,
     "moduleResolution": "Node",
-    "baseUrl": "src", //src
+//    "baseUrl": "src", //src
+    "baseUrl": ".", //src
     "paths": {
       "@/*": ["./src/*"]
     },
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, //правильно обрабатывать импорты
+    "allowSyntheticDefaultImports": true, //правильно обрабатывать импорты дефолтного импорта библиотек не указывать * as 33:29
     "isolatedModules": true,
-
     //    "noUnusedLocals": true,
     "sourceMap": true,
-
     "typeRoots": [
       "src/customTypings",
       "node_modules/@types"
@@ -34,17 +34,17 @@
     //    "noEmit": true,
     "outDir": "dist"
   },
-
   "include": [
     "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "./src/**/*.tsx",
+    "webpack.config.ts"
   ],
   "exclude": [
     "./src/**/*Slice*"
   ],
-  "ts-node": {
+  "ts-node": { //для импортов
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS" //теперь можно использовать "module": "ESNext"
     }
   },
   "files": [

@@ -1,4 +1,4 @@
-import { postForm, getUserInfoApi } from 'utils/api/request';
+import { postForm, getUserInfoApi } from '@/utils/api/request';
 // import { TLogin } from '../containers/LoginPage/types';
 
 // export const getToken = (data: TLogin) =>
