@@ -1,4 +1,5 @@
 import React, { FC, useEffect } from 'react';
+import { ButtonDesktop } from '@alfalab/core-components/button/desktop';
 import './style.css';
 import { BrowserRouter } from 'react-router-dom';
 // import { AppWrapper } from 'containers/styles';
@@ -157,6 +158,7 @@ const App: FC = () => {
         {/*</button>*/}
         <button onClick={createPost}>Создать пост2222 </button>
         <BaseButton btnText="123" />
+        <ButtonDesktop view="accent">Accent</ButtonDesktop>
         <Routes />
       </BrowserRouter>
 
