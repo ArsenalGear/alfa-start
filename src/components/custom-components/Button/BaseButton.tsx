@@ -1,5 +1,4 @@
 import React, { FC, memo } from 'react';
-import { StyledButton } from './styles';
 import { TBaseButtonProps } from './types';
 
 const BaseButtonMemo: FC<TBaseButtonProps> = ({
@@ -9,9 +8,9 @@ const BaseButtonMemo: FC<TBaseButtonProps> = ({
   className,
   ...props
 }) => (
-  <StyledButton style={style} disabled={disabled} className={className} {...props}>
+  <button style={style} disabled={disabled} className={className} {...props}>
     {btnText}
-  </StyledButton>
+  </button>
 );
 
 export const BaseButton = memo(BaseButtonMemo);
