@@ -54,7 +54,7 @@ const config: webpack.Configuration = {
     ],
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.css'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     alias: {
       '@': path.resolve(__dirname, 'src'), // Убедитесь, что вы используете path.resolve
@@ -72,7 +72,6 @@ const config: webpack.Configuration = {
   devtool: 'inline-source-map', //оставить для дебага на проде sourcemap 'source-map'
   devServer: {
     // contentBase: path.join(__dirname, 'dist'),
-    // contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true, //для того чтобы в spa работали роуты
     // static: {
     //   directory: path.join(__dirname, 'dist'),
@@ -80,7 +79,7 @@ const config: webpack.Configuration = {
     // compress: true,
     open: true,
     port: 9000,
-    // hot: true, //для того чтобы после ctrl+s - не слетали данные с формы /hot module reload /2:06:00
+    hot: true, //для того чтобы после ctrl+s - не слетали данные с формы /hot module reload /2:06:00
   },
   mode: 'production', //development
 };

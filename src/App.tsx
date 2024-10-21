@@ -156,7 +156,7 @@ const App: FC = () => {
         {/*>*/}
         {/*  Изменить пост*/}
         {/*</button>*/}
-        <button onClick={createPost}>Создать пост2222 </button>
+        <button onClick={createPost}>Создать пост22212 </button>
         <BaseButton btnText="123" />
         <ButtonDesktop view="accent">Accent</ButtonDesktop>
         <Routes />
