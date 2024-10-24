@@ -6,7 +6,7 @@ import { Loader } from '@alfalab/core-components/loader/cssm';
 import { App } from './components/app';
 import { MainPage } from './pages/main-page';
 
-const PaymentCalendar = React.lazy(() => import('./pages/payment-calendar'));
+// const PaymentCalendar = React.lazy(() => import('./pages/payment-calendar'));
 
 export const routes: RouteObject[] = [
     {
@@ -17,7 +17,8 @@ export const routes: RouteObject[] = [
                 path: '/calendar',
                 element: (
                     <Suspense fallback={<Loader />}>
-                        <PaymentCalendar />
+                        {/* <PaymentCalendar /> */}
+                        <p>111</p>
                     </Suspense>
                 ),
             },
