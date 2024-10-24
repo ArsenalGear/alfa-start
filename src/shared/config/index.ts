@@ -1,14 +1,6 @@
-// const BASE_URL = process.env.REACT_APP_API_URL || `${__webpack_public_path__}api/v1/sap`;
-const BASE_URL = `${__webpack_public_path__}api/v1/sap` || process.env.REACT_APP_API_URL;
-console.log(666, process.env.REACT_APP_API_URL);
-//
-// if (process.env.REACT_APP_PUBLIC_PATH) {
-//     __webpack_public_path__ = process.env.REACT_APP_PUBLIC_PATH;
-// } else {
-//     __webpack_public_path__ = '/';
-// }
-//
-// const BASE_URL = process.env.REACT_APP_BASE_URL || `${__webpack_public_path__}api/v1/sap`;
+const BASE_URL = process.env.REACT_APP_API_URL || `${__webpack_public_path__}api/v1/sap`;
+// const BASE_URL = `${__webpack_public_path__}api/v1/sap` || process.env.REACT_APP_API_URL;
+// console.log(11111111111111111111111111, 'BASE_URL', BASE_URL);
 
 export const config = {
     basename: process.env.ROUTER_BASENAME,

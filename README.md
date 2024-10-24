@@ -16,7 +16,24 @@ node remove-examples.mjs
 
 ```sh
 yarn start
+npm start
 ```
+
+## Как собрать?
+
+```sh
+yarn build
+npm run build
+```
+
+# Запуск сборки на локалке после билда
+### `npm install -g serve` - установка сервера
+### `npm run serve` - запуск сервера
+
+# Файлы конфигурации для прода
+### .env файл 
+### `REACT_APP_API_URL` - пример переменной для хоста бэка
+
 
 ### Дополнительно запустить alfalife-stab-remote-middle <https://git.moscow.alfaintra.net/projects/EJM/repos/alfalife-stab-remote-middle/browse>
 

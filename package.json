@@ -14,6 +14,7 @@
         "bundle-analyze": "alfapeople-arui-scripts-presets bundle-analyze",
         "cypress:open": "cypress open",
         "cypress:run": "cypress run",
+        "serve": "serve -s build --single",
         "find-deadcode": "ts-prune --ignore \"src/shared/types\"",
         "format": "alfapeople-arui-scripts-presets format",
         "lint:css": "alfapeople-arui-scripts-presets lint:css",
@@ -35,15 +36,19 @@
         "@reduxjs/toolkit": "1.9.7",
         "classnames": "2.5.1",
         "date-fns": "3.6.0",
+        "formik": "^2.4.3",
+        "history": "^5.3.0",
         "dotenv": "16.4.5",
         "ismobilejs": "1.1.1",
         "lodash": "4.17.21",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-redux": "8.1.3",
+        "redux-persist": "^6.0.0",
         "react-router-dom": "6.26.1",
         "redux": "5.0.1",
-        "typescript-plugin-css-modules": "5.1.0"
+        "typescript-plugin-css-modules": "5.1.0",
+        "yup": "^0.32.11"
     },
     "devDependencies": {
         "@alfabank/alfapeople-arui-scripts-presets": "2.3.0",

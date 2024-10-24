@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
-import { type ApplicationState } from '../store';
+// import { type ApplicationState } from '../store';
 
 export interface AppState {
     currentPeriodId: string;
@@ -25,7 +25,7 @@ export const appSlice = createSlice({
     },
 });
 
-export const { setCurrentPeriodId, setSidePanelVisible } = appSlice.actions;
-
-export const selectCurrentPeriodId = (state: ApplicationState) => state.app.currentPeriodId;
-export const selectIsSidePanelVisible = (state: ApplicationState) => state.app.isSidePanelVisible;
+// export const { setCurrentPeriodId, setSidePanelVisible } = appSlice.actions;
+//
+// export const selectCurrentPeriodId = (state: ApplicationState) => state.app.currentPeriodId;
+// export const selectIsSidePanelVisible = (state: ApplicationState) => state.app.isSidePanelVisible;

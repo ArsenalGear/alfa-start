@@ -1,11 +1,11 @@
-import React, {type FC} from 'react';
-import {PersonShruggingEmoji} from '@alfabank/alfapeople-components/emojis/person-shrugging-emoji';
-import {SpiralCalendarEmoji} from '@alfabank/alfapeople-components/emojis/spiral-calendar-emoji';
+import React, { type FC } from 'react';
+import { PersonShruggingEmoji } from '@alfabank/alfapeople-components/emojis/person-shrugging-emoji';
+import { SpiralCalendarEmoji } from '@alfabank/alfapeople-components/emojis/spiral-calendar-emoji';
 
-import {Button} from '@alfalab/core-components/button/cssm';
-import {SuperEllipse} from '@alfalab/core-components/icon-view/cssm/super-ellipse';
-import {useMatchMedia} from '@alfalab/core-components/mq';
-import {Typography} from '@alfalab/core-components/typography/cssm';
+import { Button } from '@alfalab/core-components/button/cssm';
+import { SuperEllipse } from '@alfalab/core-components/icon-view/cssm/super-ellipse';
+import { useMatchMedia } from '@alfalab/core-components/mq';
+import { Typography } from '@alfalab/core-components/typography/cssm';
 
 import styles from './info-page.module.css';
 
@@ -14,7 +14,7 @@ interface InfoPageProps {
     handleClick: () => void;
 }
 
-export const InfoPage: FC<InfoPageProps> = ({view, handleClick}) => {
+export const InfoPage: FC<InfoPageProps> = ({ view, handleClick }) => {
     const title = view === 'info' ? 'Пока нет выплат' : 'Не удалось загрузить';
     const text =
         view === 'info'
@@ -29,7 +29,8 @@ export const InfoPage: FC<InfoPageProps> = ({view, handleClick}) => {
             <p>shared info-page </p>
             <div className={styles.content} data-test-id='info-page-content'>
                 <SuperEllipse className={styles.icon} size={80} backgroundColor='#f3f4f5'>
-                    {view === 'info' ? <SpiralCalendarEmoji/> : <PersonShruggingEmoji/>}
+                    {view === 'info' ? <SpiralCalendarEmoji /> : <PersonShruggingEmoji />}
+                    <p>Error boundary</p>
                 </SuperEllipse>
                 <Typography.TitleResponsive tag='h1' view='small' className={styles.title}>
                     {title}
