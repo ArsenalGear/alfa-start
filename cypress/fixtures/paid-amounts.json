@@ -1,0 +1,17 @@
+{
+    "paidAmounts": [
+        {
+            "amountDate": "Март 2023",
+            "amountName": "Расчет за месяц",
+            "amountSum": "15 007,85",
+            "periodId": "202303"
+        },
+        {
+            "amountDate": "15.03.2023",
+            "amountName": "Аванс",
+            "amountSum": "15 181,15",
+            "amountTooltip": "Доплата сотрудникам за служебные поездки в связи с разъездным характером работы",
+            "periodId": "202303"
+        }
+    ]
+}

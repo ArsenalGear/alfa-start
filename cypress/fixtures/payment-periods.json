@@ -1,0 +1,8 @@
+{
+    "paymentPeriods": [
+        { "periodId": "202212", "periodName": "Декабрь 2022" },
+        { "periodId": "202301", "periodName": "Январь 2023" },
+        { "periodId": "202302", "periodName": "Февраль 2023" },
+        { "periodId": "202303", "periodName": "Март 2023" }
+    ]
+}

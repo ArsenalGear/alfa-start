@@ -1,0 +1,16 @@
+.container {
+    background-color: var(--color-light-bg-secondary);
+    border-radius: var(--border-radius-xl);
+    padding: var(--gap-m);
+    padding-bottom: var(--gap-l);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--gap-xs);
+}
+
+.skeleton {
+    width: max-content;
+}

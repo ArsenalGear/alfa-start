@@ -1,0 +1,55 @@
+{
+    "paymentSchedule": [
+        {
+            "text": "Заработная плата",
+            "extendedText": "Выплата ЗП",
+            "day": "20230301",
+            "type": "wtime"
+        },
+        { "text": "", "extendedText": "", "day": "20230302", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230303", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230304", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230305", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230306", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230307", "type": "wtime" },
+        {
+            "text": "Международный Женский День",
+            "extendedText": "",
+            "day": "20230308",
+            "type": "17"
+        },
+        { "text": "", "extendedText": "", "day": "20230309", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230310", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230311", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230312", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230313", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230314", "type": "wtime" },
+        {
+            "text": "Аванс",
+            "extendedText": "Плановая выплата аванса",
+            "day": "20230315",
+            "type": "wtime"
+        },
+        { "text": "", "extendedText": "", "day": "20230316", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230317", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230318", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230319", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230320", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230321", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230322", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230323", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230324", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230325", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230326", "type": "20" },
+        { "text": "", "extendedText": "", "day": "20230327", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230328", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230329", "type": "wtime" },
+        { "text": "", "extendedText": "", "day": "20230330", "type": "wtime" },
+        {
+            "text": "Заработная плата",
+            "extendedText": "Плановая выплата ЗП",
+            "day": "20230331",
+            "type": "wtime"
+        }
+    ]
+}

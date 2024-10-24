@@ -1,0 +1,3 @@
+[submodule "alfa-devops-scripts"]
+	path = alfa-devops-scripts
+	url = ssh://git@git.moscow.alfaintra.net/ejm/alfa-devops-scripts.git

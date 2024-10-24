@@ -1,49 +1,21 @@
 {
-  "compilerOptions": {
-    "noImplicitAny": true,
-    "module": "ESNext",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "strict": true,
-    "moduleResolution": "Node",
-    "baseUrl": ".", //src
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "sourceMap": true,
-    "typeRoots": [
-      "src/customTypings",
-      "node_modules/@types"
-    ],
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "outDir": "dist"
-  },
-  "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "webpack.config.ts"
-  ],
-  "exclude": [
-    "./src/**/*Slice*"
-  ],
-  "ts-node": {
+    "extends": "./node_modules/@alfabank/alfapeople-arui-scripts-presets/tsconfig/tsconfig.ui.json",
     "compilerOptions": {
-      "module": "CommonJS"
-    }
-  },
-  "files": [
-    "./src/index.d.ts"
-  ]
+        "allowJs": false,
+        "baseUrl": ".",
+        "noErrorTruncation": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules",
+                "options": {
+                    "postCssOptions": {
+                        "useConfig": true
+                    }
+                }
+            }
+        ]
+    },
+    "include": ["**/*"]
 }

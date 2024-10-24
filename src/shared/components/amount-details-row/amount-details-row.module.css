@@ -1,0 +1,32 @@
+.wrapper {
+    padding: var(--gap-s) var(--gap-0);
+    border-bottom: 1px solid #dcdcdd;
+}
+
+.skeletonWrapper {
+    padding: var(--gap-m) var(--gap-0);
+    border-bottom: 1px solid #dcdcdd;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--gap-3xs);
+}
+
+.amountName {
+    display: flex;
+}
+
+.tooltip {
+    margin-left: var(--gap-xs);
+}
+
+.contentTooltip {
+    width: 256px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
