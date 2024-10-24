@@ -145,7 +145,7 @@ export const {
     // useGetPaidAmountsQuery,
     // useGetPaidAmountsDetailsQuery,
     // useGetPaymentScheduleQuery,
-    // useGetPostsQuery
+    // useGetPostsQuery 11
 } = apiSlice;
 
 // export const {useQueryState: useGetPaymentPeriodsQueryState} =
