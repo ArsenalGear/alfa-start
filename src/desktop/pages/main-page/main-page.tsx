@@ -2,13 +2,13 @@ import React, { type FC } from 'react';
 
 // import { useDispatch, useSelector } from 'react-redux';
 import { Gap } from '@alfalab/core-components/gap/cssm';
-
 // import { InfoPage } from '../../../shared/components/info-page';
 // import { selectIsFetchError, useGetPaymentPeriodsQuery } from '../../../shared/slices/api-slice';
 // import { setSidePanelVisible } from '../../../shared/slices/app-slice';
 // import { trackAlfaMetrics } from '../../../shared/utils/track-alfa-metrics';
 // import { CalendarSidePanel } from '../../components/calendar-side-panel';
 // import { PageHeader } from '../../components/page-header';
+import { Input } from '@alfalab/core-components/input';
 
 export const MainPage: FC = () => (
     // const dispatch = useDispatch();
@@ -52,6 +52,16 @@ export const MainPage: FC = () => (
     // }
 
     <React.Fragment>
+        <Input
+            placeholder='Введите текст'
+            // block={true}
+            label='Текст'
+            name='login'
+            // labelView={isMobile() ? 'outer' : 'inner'}
+            // size={isMobile() ? 48 : 56}
+            // breakpoint={BREAKPOINT}
+        />
+
         {/* <PageHeader /> */}
         <Gap size='2xl' />
         {/* <div className={styles.wrapper}> */}
