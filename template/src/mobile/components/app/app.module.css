@@ -1,0 +1,5 @@
+.app {
+    margin: var(--gap-0) auto;
+    padding: var(--gap-m);
+    height: inherit;
+}

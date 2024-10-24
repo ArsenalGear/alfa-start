@@ -1,0 +1,14 @@
+.container {
+    background-color: var(--color-light-bg-secondary);
+    border-radius: var(--border-radius-xl);
+    padding: var(--gap-xl);
+    width: 600px;
+}
+
+.skeleton {
+    width: max-content;
+}
+
+.amount {
+    min-width: 200px;
+}

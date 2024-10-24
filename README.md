@@ -1,15 +1,38 @@
-# Установка проекта
-### `npm install`
+Этот проект создан на основании шаблонного проекта <https://git.moscow.alfaintra.net/projects/EJM/repos/alfalife-stab-remote-front/browse>
 
-# Запуск проекта
-### `npm start`
+Документация находится тут: <https://git.moscow.alfaintra.net/projects/EJM/repos/readme-front/browse/README.md>
 
-# Сборка проекта для сервера
-### `npm run build`
+## Старт нового проекта: :rocket:
 
-# Запуск сборки на локалке после билда
-### `npm install -g serve` - установка сервера
-### `npm run serve` - запуск сервера
+Вам необходимо склонировать репозиторий на свой компьютер, выполнить `yarn install` и для очистки от примеров кода запустить:
 
+```sh
+node remove-examples.mjs
+```
 
+Потом заменить в `package.json` поля `name` и `moduleFederation.exposes` на нужные
 
+## Как запустить?
+
+```sh
+yarn start
+```
+
+### Дополнительно запустить alfalife-stab-remote-middle <https://git.moscow.alfaintra.net/projects/EJM/repos/alfalife-stab-remote-middle/browse>
+
+```sh
+yarn start:mock
+```
+
+## Как открыть?
+
+- Десктопная версия будет доступна по <http://localhost:8080/>
+- Мобильная версия будет доступна по <http://localhost:8080/mobile.html>
+
+## Если при подключении как remote возникает ошибка `cannot read properties of undefined (reading 'init')`
+
+то необходимо закомментировать код в `arui-scripts.overrides.js`
+
+```ts
+config.optimization.runtimeChunk = 'single';
+```

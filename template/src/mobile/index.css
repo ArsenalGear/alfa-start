@@ -1,0 +1,33 @@
+@import '@alfalab/core-components/vars';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: var(--gap-0);
+    padding: var(--gap-0);
+    height: 100%;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--color-light-bg-primary);
+    color: var(--color-light-text-primary);
+    font-family: var(--font-family-system);
+    font-style: normal;
+    letter-spacing: 0;
+    min-width: 360px;
+}
+
+#root {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: inherit;
+}

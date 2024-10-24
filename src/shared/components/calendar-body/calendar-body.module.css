@@ -1,0 +1,42 @@
+.itemContainer {
+    display: flex;
+    margin-bottom: var(--gap-2xl);
+}
+
+.itemContainer:first-of-type {
+    margin-top: var(--gap-xl);
+}
+
+.iconContainer {
+    margin-right: var(--gap-m);
+}
+
+.itemDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-m);
+    line-height: 24px;
+    color: black;
+}
+
+.itemSubTitle {
+    color: #8a8a8e;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.calendar {
+    --calendar-today-color: var(--color-light-text-accent);
+    --calendar-holiday-color: var(--color-light-text-secondary);
+
+    table {
+        pointer-events: none;
+    }
+}

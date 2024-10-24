@@ -1,0 +1,20 @@
+.rightArrow {
+    fill: #c5c5c7;
+}
+
+.calendarButton {
+    background-color: var(--color-light-bg-secondary);
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--gap-m);
+
+    &:hover {
+        background-color: var(--color-light-bg-secondary);
+    }
+
+    &:active {
+        background-color: var(--color-light-bg-secondary-shade-15);
+    }
+}

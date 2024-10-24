@@ -1,0 +1,7 @@
+.page {
+    position: static;
+}
+
+.title {
+    margin-bottom: var(--gap-2xl);
+}

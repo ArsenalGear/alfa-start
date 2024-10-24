@@ -1,0 +1,25 @@
+{
+    "paidAmountsDetails": [
+        {
+            "amountDate": "Март 2023",
+            "amountName": "Оклад",
+            "amountNum": "175,00 дней/часов",
+            "amountSum": "+30 173,91",
+            "periodId": "202303"
+        },
+        {
+            "amountDate": "Март 2023",
+            "amountName": "Районный коэффициент",
+            "amountNum": "",
+            "amountSum": "+4 526,09",
+            "periodId": "202303"
+        },
+        {
+            "amountDate": "Март 2023",
+            "amountName": "НДФЛ 13%",
+            "amountNum": "",
+            "amountSum": "-4 511,00",
+            "periodId": "202303"
+        }
+    ]
+}

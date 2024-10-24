@@ -1,0 +1,5 @@
+.app {
+    margin: var(--gap-0) auto;
+    width: 1280px;
+    padding: var(--gap-l) 28px;
+}

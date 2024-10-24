@@ -1,0 +1,1 @@
+export { Payslip } from './payslip';
