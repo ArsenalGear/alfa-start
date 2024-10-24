@@ -14,6 +14,7 @@
         "bundle-analyze": "alfapeople-arui-scripts-presets bundle-analyze",
         "cypress:open": "cypress open",
         "cypress:run": "cypress run",
+        "serve": "serve -s build --single",
         "find-deadcode": "ts-prune --ignore \"src/shared/types\"",
         "format": "alfapeople-arui-scripts-presets format",
         "lint:css": "alfapeople-arui-scripts-presets lint:css",
