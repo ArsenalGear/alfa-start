@@ -21,7 +21,7 @@ export const MainPage: FC = () => {
     const noPayments = paymentPeriods.length === 0;
     const isError = useSelector(selectIsFetchError);
 
-    console.log(888, process.env.REACT_APP_API_URL)
+    console.log(8881, process.env.REACT_APP_API_URL);
 
     if (isSuccess && noPayments) {
         return (
