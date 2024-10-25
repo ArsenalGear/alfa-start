@@ -15,13 +15,12 @@ import { type AuthEntity } from '../../../shared/types/generated-types';
 import styles from './auth-page.module.css';
 
 export const AuthPage: FC = () => {
-    const isDisable = false;
-
     const loginData: FormikProps<AuthEntity> = useFormik<AuthEntity>({
         initialValues: INITIAL_AUTH_VALUES,
         // validateOnMount: true,
-        // validateOnChange: true,
-        enableReinitialize: true,
+        // validateOnChange: formSubmit,
+        validateOnChange: false,
+        // enableReinitialize: true,
         validationSchema: VALIDATE_LOGIN_FORM,
         onSubmit: (values) => {
             // console.log(1, 'values', values);
@@ -94,7 +93,8 @@ export const AuthPage: FC = () => {
                             // onMouseDown
                             // onClick
                             // defaultValue
-                            error={errors.username ? errors.username : false}
+                            // disabled={false}
+                            error={values.username ? false : errors.username}
                             block={true}
                             placeholder='Имя пользователя'
                             label='Введите имя пользователя'
@@ -108,9 +108,8 @@ export const AuthPage: FC = () => {
                     <Gap size={48} />
                     <div className={styles.loginInputWrapper}>
                         <Input
-                            error={errors.password ? errors.password : false}
+                            error={values.password ? false : errors.password}
                             block={true}
-                            disabled={isDisable}
                             placeholder='Пароль'
                             label='Введите пароль'
                             name='password'
