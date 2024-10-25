@@ -1,0 +1,24 @@
+.wrapper {
+    width: 600px;
+    min-height: 100vh;
+    margin: var(--gap-0) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    text-align: right;
+}
+
+.loginForm {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInputWrapper {
+    height: 28px;
+}

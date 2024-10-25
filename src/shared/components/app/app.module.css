@@ -1,12 +1,4 @@
 .app {
     margin: var(--gap-0) auto;
-    padding: var(--gap-m);
-    padding-top: var(--gap-xl);
     height: inherit;
-
-    @media (--desktop) {
-        padding: var(--gap-0);
-        width: 1016px;
-        height: auto;
-    }
 }
