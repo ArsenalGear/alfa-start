@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigate, type RouteObject } from 'react-router-dom';
 
 import { App } from './components/app';
-import { MainPage } from './pages/main-page';
+import { AuthPage } from './pages/auth-page';
 
 export const routes: RouteObject[] = [
     {
@@ -11,7 +11,11 @@ export const routes: RouteObject[] = [
         children: [
             {
                 path: '/',
-                element: <MainPage />,
+                element: <AuthPage />,
+            },
+            {
+                path: '/dashboard',
+                element: <p>123</p>,
             },
             {
                 path: '*',

@@ -1,3 +1,4 @@
+export * from './auth-entity';
 export * from './paid-amount-entity';
 export * from './paid-amounts-details-entity';
 export * from './paid-amounts-entity';
