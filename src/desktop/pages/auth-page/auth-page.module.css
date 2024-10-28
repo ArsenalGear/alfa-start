@@ -1,5 +1,5 @@
 .wrapper {
-    width: 600px;
+    width: 340px;
     min-height: 100vh;
     margin: var(--gap-0) auto;
     display: flex;
@@ -10,15 +10,16 @@
 }
 
 .title {
-    text-align: right;
+    width: 100%;
+    text-align: left;
 }
 
-.loginForm {
-    width: 220px;
+.login__form {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.loginInputWrapper {
+.login_form__input_wrapper {
     height: 28px;
 }

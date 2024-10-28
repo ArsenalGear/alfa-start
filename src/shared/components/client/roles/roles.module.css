@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content {
+    max-width: 300px;
+    margin: var(--gap-0) auto;
+}
+
+.icon {
+    margin-bottom: var(--gap-m);
+}
+
+.title {
+    text-align: left;
+    margin-bottom: var(--gap-s);
+}
+
+.button {
+    margin-top: auto;
+}
