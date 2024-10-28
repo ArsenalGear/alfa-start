@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    padding: var(--gap-24) var(--gap-0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__image {
+    width: 100%;
+    height: 45px;
+    background-image: url('../../../shared/assets/img/header.jpg');
+    background-size: cover;
+}

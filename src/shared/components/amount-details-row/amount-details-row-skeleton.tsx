@@ -6,7 +6,7 @@ import { Space } from '@alfalab/core-components/space/cssm';
 import styles from './amount-details-row.module.css';
 
 export const AmountDetailsRowSkeleton: FC = () => (
-    <div className={styles.skeletonWrapper}>
+    <div className={styles.skeleton__wrapper}>
         <Space size={8}>
             <Skeleton visible={true}>
                 <div style={{ width: '240px', height: '16px' }} />

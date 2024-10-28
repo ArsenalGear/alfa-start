@@ -1,9 +1,11 @@
 import React, { type FC } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { type FormikProps, useFormik } from 'formik';
 
 import { ButtonDesktop } from '@alfalab/core-components/button/desktop';
 import { Gap } from '@alfalab/core-components/gap/cssm';
 import { Input } from '@alfalab/core-components/input';
+import { PasswordInput } from '@alfalab/core-components/password-input';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { selectIsFetchError, useGetPaymentPeriodsQuery } from '../../../shared/slices/api-slice';
 // import { PageHeader } from '../../components/page-header';
@@ -15,6 +17,7 @@ import { type AuthEntity } from '../../../shared/types/generated-types';
 import styles from './auth-page.module.css';
 
 export const AuthPage: FC = () => {
+    const navigate = useNavigate();
     const loginData: FormikProps<AuthEntity> = useFormik<AuthEntity>({
         initialValues: INITIAL_AUTH_VALUES,
         // validateOnMount: true,
@@ -30,6 +33,8 @@ export const AuthPage: FC = () => {
                 grant_type: 'password',
                 client_id: 'account',
             };
+
+            navigate('/client/dashboard');
 
             // dispatch(loginUserRequest({values: finalFormData, navigate}));
         },
@@ -85,8 +90,8 @@ export const AuthPage: FC = () => {
                     Авторизация
                 </Typography.Title>
                 <Gap size={16} />
-                <form className={styles.loginForm} id='loginForm'>
-                    <div className={styles.loginInputWrapper}>
+                <form className={styles.login__form} id='loginForm'>
+                    <div className={styles.login_form__input_wrapper}>
                         <Input
                             // onClear
                             // hint="подсказка"
@@ -106,8 +111,8 @@ export const AuthPage: FC = () => {
                         />
                     </div>
                     <Gap size={48} />
-                    <div className={styles.loginInputWrapper}>
-                        <Input
+                    <div className={styles.login_form__input_wrapper}>
+                        <PasswordInput
                             error={values.password ? false : errors.password}
                             block={true}
                             placeholder='Пароль'

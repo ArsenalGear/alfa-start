@@ -1,0 +1,14 @@
+.footer__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--gap-24);
+}
+
+.footer {
+    width: 100%;
+    height: 245px;
+    background-image: url('../../../shared/assets/img/footer.jpg');
+    background-size: cover;
+}

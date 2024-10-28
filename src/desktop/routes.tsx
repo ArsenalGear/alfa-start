@@ -3,6 +3,8 @@ import { Navigate, type RouteObject } from 'react-router-dom';
 
 import { App } from './components/app';
 import { AuthPage } from './pages/auth-page';
+import { DashboardPage } from './pages/client/dashboard-page';
+import { RolesPage } from './pages/client/roles-page';
 
 export const routes: RouteObject[] = [
     {
@@ -14,8 +16,16 @@ export const routes: RouteObject[] = [
                 element: <AuthPage />,
             },
             {
-                path: '/dashboard',
-                element: <p>123</p>,
+                path: '/client/dashboard',
+                element: <DashboardPage />,
+            },
+            {
+                path: '/client/roles',
+                element: <RolesPage />,
+            },
+            {
+                path: '/roles',
+                element: <DashboardPage />,
             },
             {
                 path: '*',
